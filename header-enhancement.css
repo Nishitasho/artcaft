@@ -1,0 +1,36 @@
+.brand {
+  gap: 17px;
+}
+
+.brand span {
+  position: relative;
+  padding: 4px 0 5px;
+  color: #f3f4ef;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-shadow: 0 1px 16px rgba(0, 0, 0, .75);
+}
+
+.brand span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 32px;
+  height: 1px;
+  background: var(--green);
+}
+
+@media (max-width: 1050px) {
+  .brand span {
+    font-size: 13px;
+    letter-spacing: .09em;
+  }
+}
+
+@media (max-width: 800px) {
+  .brand span {
+    display: none;
+  }
+}
